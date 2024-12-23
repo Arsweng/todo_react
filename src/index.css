@@ -1,5 +1,5 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Code Pro', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -62,9 +62,6 @@ header input {
   background: white;
 }
 
-p {
-  font-size: 0.9em;
-}
 
 .main {
   display: flex;
@@ -79,10 +76,14 @@ p {
   padding: 14px;
   border-radius: 14px;
   background: white;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .todoItem p {
   flex: 1;
+  opacity: .8;
+
 }
 
 .actionsContainer {
