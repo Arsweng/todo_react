@@ -17,16 +17,13 @@ function App() {
   function handleDeleteTodo(index) {
     const newTodoList = todos.filter((todo, todoIdex) => todoIdex !== index);
         parsistData(newTodoList);
-
     setTodos(newTodoList)
-
   }
 
   function handleEditTodo(index) {
-    setTodoValue(todos[index])
+    setTodoValue(todos[index])                                                                                                                                                                                                                                                                                                                         
     const newTodoList = todos.filter((todo, todoIdex) => todoIdex !== index);
         parsistData(newTodoList);
-
     setTodos(newTodoList)
   }
   const [todoValue, setTodoValue] = useState();
@@ -39,7 +36,7 @@ function App() {
     if (!localTodos) {
       return
     }
-    localTodos = JSON.parse(localTodos).todos
+    localTodos = JSON.parse(localTodos).todos // same as x = json.parse(localtodos) and then x.todos
     setTodos(localTodos)
   },[])
   return (
